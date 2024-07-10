@@ -1,6 +1,67 @@
 [
-    { "row": 1, "seat": 1 },
-    { "row": 1, "seat": 2 },
-    { "row": 1, "seat": 3 }
-   ]
+    {
+      "name": "First",
+      "data": [
+        { "row": 1, "seat": 1 },
+        { "row": 1, "seat": 2 },
+        { "row": 1, "seat": 3 },
+        { "row": 1, "seat": 4 },
+        { "row": 1, "seat": 5 },
+        { "row": 1, "seat": 6 },
+        { "row": 1, "seat": 7 }
+      ],
+      "movie_day": "a.page-nav__day",
+      "movie_name": ".movie",
+      "movie_accept": ".acceptin-button",
+      "movie_seats": [
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(1)"},
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(2)"},
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(3)"},
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(4)"},
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(5)"},
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(6)"},
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(7)"}
+      ]
+    },
+    {
+      "name": "Second",
+      "data": [
+        { "row": 1, "seat": 1 },
+        { "row": 2, "seat": 1 },
+        { "row": 3, "seat": 1 },
+        { "row": 4, "seat": 1 },
+        { "row": 5, "seat": 1 },
+        { "row": 6, "seat": 1 },
+        { "row": 7, "seat": 1 }
+      ],
+      "movie_day": "a.page-nav__day",
+      "movie_name": ".movie",
+      "movie_accept": ".acceptin-button",
+      "movie_seats": [
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(1)" },
+        { "seat": ".buying-scheme__wrapper > :nth-child(2) > :nth-child(1)" },
+        { "seat": ".buying-scheme__wrapper > :nth-child(3) > :nth-child(1)" },
+        { "seat": ".buying-scheme__wrapper > :nth-child(4) > :nth-child(1)" },
+        { "seat": ".buying-scheme__wrapper > :nth-child(5) > :nth-child(1)" },
+        { "seat": ".buying-scheme__wrapper > :nth-child(6) > :nth-child(1)" },
+        { "seat": ".buying-scheme__wrapper > :nth-child(7) > :nth-child(1)" }
+      ]
+    },
+    {
+      "name": "Third",
+      "data": [
+        { "row": 5, "seat": 4 },
+        { "row": 3, "seat": 6 },
+        { "row": 6, "seat": 7 }
+      ],
+      "movie_day": "a.page-nav__day",
+      "movie_name": ".movie",
+      "movie_accept": ".acceptin-button",
+      "movie_seats": [
+        { "seat": ".buying-scheme__wrapper > :nth-child(5) > :nth-child(4)" },
+        { "seat": ".buying-scheme__wrapper > :nth-child(3) > :nth-child(6)" },
+        { "seat": ".buying-scheme__wrapper > :nth-child(6) > :nth-child(7)" }
+      ]
+    }
+]
    

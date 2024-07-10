@@ -1,20 +1,20 @@
-const seats = require("../fixtures/seats.json");
+import tests from "../fixtures/seats"
 
-it("Should show correct number of days", () => {
-  cy.visit("qamid.tmweb.ru");
-  cy.get(".page-nav__day").should("have.length", 7);
-});
-
-it("Should be possible to book", () => {
-  cy.visit("qamid.tmweb.ru");
-  cy.get("a.page-nav__day:nth-of-type(4)").click();
-  cy.get(".movie").first().contains("15:00").click();
-  const seats = require("../fixtures/seats.json");
-  seats.forEach((seat) => {
-    cy.get(
-      `.buying-scheme__wrapper > :nth-child(${seat.row}) > :nth-child(${seat.seat})`
-    ).click();
+describe('movie ticket reservation screen', () =>{
+  beforeEach(() =>{
+    cy.visit("/")
   });
-  cy.get(".acceptin-button").click();
-  cy.contains("Вы выбрали билеты:").should("be.visible");
+
+
+  tests.forEach((test) => {
+    it(test.name, () => {
+      cy.get(test.movie_day).eq(4).click();
+      cy.get(test.movie_name).first().contains("13:00").click();
+      test.movie_seats.forEach((seat) => {
+        cy.get(seat.seat).click();
+      });
+      cy.get(test.movie_accept).click();
+      cy.contains("Вы выбрали билеты:").should("be.visible");
+    })
+  })
 });

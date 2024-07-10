@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("login", (login, password) => {
+  if (login) cy.get('[for="email"] > .login__input').type(login);
+  if (password) cy.get('[for="pwd"] > .login__input').type(password);
+  cy.contains("Авторизоваться").click();
+});
