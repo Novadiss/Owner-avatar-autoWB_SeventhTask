@@ -16,10 +16,10 @@ describe('movie ticket reservation screen', () =>{
       const movie3 = test.movie3;
       cy.get(test.movie_day).eq(4).click();
       // cy.get(test.movie).contains(value1).should('be.visible').get(test.movie).contains(value2).click();
-      cy.get(movie1).then(($movie)=> {
+      cy.get(movie).then(($movie)=> {
         expect($movie).to.contain(value1);
         expect($movie).to.contain(value2);
-        cy.get(movie1).contains(value2).click();
+        cy.get(movie).contains(value2).click();
       })
       // cy.get(test.movie_hall).first().contains("13:00").click();
       test.movie_seats.forEach((seat) => {
