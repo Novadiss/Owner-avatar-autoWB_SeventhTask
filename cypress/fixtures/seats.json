@@ -11,16 +11,21 @@
         { "row": 1, "seat": 7 }
       ],
       "movie_day": "a.page-nav__day",
-      "movie_name": ".movie",
+      "movie": ".movie",
+      "movie1": "main > :nth-child(1)",
+      "movie2": "main > :nth-child(2)",
+      "movie3": "main > :nth-child(3)",
+      "movie_hall": ".movie-seances__hall-title",
+      "movie_seans": ".movie-seances__time",
       "movie_accept": ".acceptin-button",
       "movie_seats": [
-        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(1)"},
-        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(2)"},
-        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(3)"},
-        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(4)"},
-        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(5)"},
-        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(6)"},
-        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(7)"}
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(1)" },
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(2)" },
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(3)" },
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(4)" },
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(5)" },
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(6)" },
+        { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(7)" }
       ]
     },
     {
@@ -35,7 +40,12 @@
         { "row": 7, "seat": 1 }
       ],
       "movie_day": "a.page-nav__day",
-      "movie_name": ".movie",
+      "movie": ".movie",
+      "movie1": "main > :nth-child(1)",
+      "movie2": "main > :nth-child(2)",
+      "movie3": "main > :nth-child(3)",
+      "movie_hall": ".movie-seances__hall-title",
+      "movie_seans": ".movie-seances__time",
       "movie_accept": ".acceptin-button",
       "movie_seats": [
         { "seat": ".buying-scheme__wrapper > :nth-child(1) > :nth-child(1)" },
@@ -55,7 +65,12 @@
         { "row": 6, "seat": 7 }
       ],
       "movie_day": "a.page-nav__day",
-      "movie_name": ".movie",
+      "movie": ".movie",
+      "movie1": "main > :nth-child(1)",
+      "movie2": "main > :nth-child(2)",
+      "movie3": "main > :nth-child(3)",
+      "movie_hall": ".movie-seances__hall-title",
+      "movie_seans": ".movie-seances__time",
       "movie_accept": ".acceptin-button",
       "movie_seats": [
         { "seat": ".buying-scheme__wrapper > :nth-child(5) > :nth-child(4)" },
