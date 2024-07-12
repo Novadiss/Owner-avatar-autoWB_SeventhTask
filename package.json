@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:api": "npx cypress run --record --key fe51c286-f461-4055-84db-860bcac68d59 --spec \"cypress/integration/api.spec.js\" --group test_api --ci-build-id 14",
+    "test:login": "npx cypress run --record --key fe51c286-f461-4055-84db-860bcac68d59 --spec \"cypress/integration/login.spec.js\" --group login --ci-build-id 14",
+    "test:movies": "npx cypress run --record --key fe51c286-f461-4055-84db-860bcac68d59 --spec \"cypress/integration/movies.spec.js\" --group movies --ci-build-id 14",
+    "test:page": "npx cypress run --record --key fe51c286-f461-4055-84db-860bcac68d59 --spec \"cypress/integration/page.spec.js\" --group page --ci-build-id 14",
+    "test:parallel": "run-p -c test:movies test:login test:page test:apijav"
   },
   "author": "",
   "license": "ISC",
@@ -11,5 +15,8 @@
     "cypress": "^9.7.0"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
 }
