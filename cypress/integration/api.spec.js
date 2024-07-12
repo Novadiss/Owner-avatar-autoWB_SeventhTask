@@ -1,5 +1,6 @@
 describe("API test", () => {
-  const pet_id = 98765;
+
+  const pet_id = Math.floor(Math.random() * 10000);
   const pet_name = "Rex";
   const pet_url = "https://petstore.swagger.io/v2/pet";
 
