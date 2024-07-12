@@ -18,8 +18,7 @@
     "test:movies:electron": "npx cypress run --record --spec \"cypress/integration/movies.spec.js\" --group movies_electron --browser electron",
     "test:page:electron": "npx cypress run --record --spec \"cypress/integration/page.spec.js\" --group page_electron --browser electron",
     "test:parallel:electron": "run-p -c test:movies:electron test:login:electron test:page:electron test:api:electron",
-    "test:parallel:all": "run-p -c test:parallel:edge test:parallel:chrome test:parallel:electron",
-    "test:parallel:full": "run-p -c test:movies:chrome test:login:chrome test:page:chrome test:api:chrome test:movies:edge test:login:edge test:page:edge test:api:edge test:movies:electron test:login:electron test:page:electron test:api:electron"
+    "test:parallel:all": "run-p -c test:parallel:edge test:parallel:chrome test:parallel:electron"
   },
   "author": "",
   "license": "ISC",
