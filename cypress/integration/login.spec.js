@@ -1,16 +1,19 @@
-it("[Вход в админку]", () => {
+it("Valid login", () => {
     cy.visit("/admin");
+    cy.get(".page-header__title").should("be.visible");
     cy.login("qamid@qamid.ru", "qamid");
 });
 
-it("неправильный логин", () => {
+it("Invalid login", () => {
   cy.visit("/admin");
+  cy.get(".page-header__title").should("be.visible");
   cy.login("asdsa@asdasd.ru", "qamid");
     cy.contains("Ошибка авторизации!").should("be.visible");
 });
 
-it("неправильный пароль", () => {
+it("Invalid password", () => {
   cy.visit("/admin");
+  cy.get(".page-header__title").should("be.visible");
   cy.login("qamid@qamid.ru", "321");
   cy.contains("Ошибка авторизации!").should("be.visible");
 });

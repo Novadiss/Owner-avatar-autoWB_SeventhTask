@@ -4,7 +4,7 @@ describe("API test", () => {
   const pet_name = "Rex";
   const pet_url = "https://petstore.swagger.io/v2/pet";
 
-  it("Тест создания питомца", () => {
+  it("Create pet", () => {
     cy.request('POST', pet_url, {
       id: pet_id,
       name: pet_name,
@@ -20,7 +20,7 @@ describe("API test", () => {
     })
   });
 
-    it("Тест изменения питомца", () => {
+    it("Modify pet", () => {
       cy.request("PUT", pet_url, {
         id: pet_id,
         name: "Titan",
@@ -36,7 +36,7 @@ describe("API test", () => {
       });
     });
 
-  it("Тест удаления питомца", () => {
+  it("Delete pet", () => {
     cy.request("POST", pet_url, {
       id: pet_id,
       name: pet_name,
